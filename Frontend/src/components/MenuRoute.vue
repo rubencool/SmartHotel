@@ -1,0 +1,155 @@
+<template>
+  <div class="Menu">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title" style="color: #757575">
+            SmartHotel
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Menu</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Checkout</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--drawer-->
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          SmartHotel
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <i class="material-icons">restaurant menu</i>
+            Menu
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <img class="nav-icon" src="../assets/icon/icon_checkout.png">
+            Checkout
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <img class="nav-icon" src="../assets/icon/icon_about.png">
+            About
+          </a>
+          <a class="mdl-navigation__link" href="">
+            <img class="nav-icon" src="../assets/icon/icon_contact.png">
+            Contact
+          </a>
+        </nav>
+      </div>
+
+      <!--content-->
+      <div class="android-content mdl-layout__content">
+        <div class="android-more-section">
+          <div class="android-card-container mdl-grid" v-if="category && category.length">
+
+            <!--order-->
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-card mdl-shadow--3dp" v-for="cat in category ">
+              <div class="mdl-card__media">
+                <img v-bind:src = url>
+              </div>
+              <div class="mdl-card__title">
+                <h4 class="mdl-card__title-text">
+                  {{cat.cat_name}}
+                </h4>
+              </div>
+              <div class="mdl-card__actions">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/menu">
+                  {{cat.cat_name}}
+                  <i class="material-icons">
+                    chevron_right
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-->
+    <ul v-if="errors && errors.length">
+      <li v-for="error in errors">
+        {{error.message}}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+  import axios from 'axios'
+  export default {
+    name: 'MenuRoute',
+    data () {
+      return {
+        category: [],
+        errors: [],
+        url: '../assets/icon/',
+        msg: 'MenuRoute'
+      }
+    },
+    created () {
+      this.loadCategory()
+    },
+    methods: {
+      loadCategory: function () {
+        axios.get('http://127.0.0.1:8000/api/food/category')
+          .then(response => {
+            console.log(response.data)
+            this.category = response.data
+//          ready url
+            this.category.forEach(this.url = +this.category.icon)
+          }).catch(e => {
+            this.errors.push(e)
+            console.error(e)
+          })
+      }
+    }
+  }
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
+
+  .nav-icon {
+    height: 30px;
+    width: 30px;
+  }
+</style>
+
