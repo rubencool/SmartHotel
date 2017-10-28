@@ -197,6 +197,14 @@
     text-align: left;
   }
 
+  .mdl-layout__header {
+    background-color: white;
+  }
+
+  .mdl-layout__header-row .mdl-navigation__link {
+    color: #757575;
+  }
+
 
 
   #view-source {

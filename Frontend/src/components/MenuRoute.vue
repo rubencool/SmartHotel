@@ -59,22 +59,30 @@
       </div>
 
       <!--content-->
+      <!--content-->
       <div class="android-content mdl-layout__content">
         <div class="android-more-section">
           <div class="android-card-container mdl-grid" v-if="category && category.length">
 
             <!--order-->
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-card mdl-shadow--3dp" v-for="cat in category ">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-card mdl-shadow--3dp" v-for="cat in category">
               <div class="mdl-card__media">
-                <img v-bind:src = url>
+                <!--<img :src="getImgUrl(cat.icon)"/>-->
+<!--TODO dynamic img url-->
+                <img src="../assets/icon/icon_maindish.png"/>
               </div>
               <div class="mdl-card__title">
                 <h4 class="mdl-card__title-text">
                   {{cat.cat_name}}
                 </h4>
               </div>
+              <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">
+                Order Food !
+              </span>
+              </div>
               <div class="mdl-card__actions">
-                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/menu">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
                   {{cat.cat_name}}
                   <i class="material-icons">
                     chevron_right
@@ -103,7 +111,7 @@
       return {
         category: [],
         errors: [],
-        url: '../assets/icon/',
+        url: '../assets/icon/icon_drinks.png',
         msg: 'MenuRoute'
       }
     },
@@ -117,11 +125,15 @@
             console.log(response.data)
             this.category = response.data
 //          ready url
-            this.category.forEach(this.url = +this.category.icon)
+//            this.category.forEach(this.url = +this.category.icon)
           }).catch(e => {
             this.errors.push(e)
             console.error(e)
           })
+      },
+      getImgUrl: function (image) {
+        var images = require.context('../assets/icon', false, /\.png$/)
+        return images('./' + image)
       }
     }
   }
@@ -150,6 +162,14 @@
   .nav-icon {
     height: 30px;
     width: 30px;
+  }
+
+  .mdl-layout__header {
+    background-color: white;
+  }
+
+  .mdl-layout__header-row .mdl-navigation__link {
+    color: #757575;
   }
 </style>
 
