@@ -24,7 +24,7 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Menu</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Checkout</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#/contact">Contact</a>
             </nav>
           </div>
         </div>
@@ -49,9 +49,9 @@
           </a>
           <a class="mdl-navigation__link" href="">
             <img class="nav-icon" src="../assets/icon/icon_about.png">
-            About
+            About Us
           </a>
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link" href="/contact">
             <img class="nav-icon" src="../assets/icon/icon_contact.png">
             Contact
           </a>
@@ -125,7 +125,7 @@
               </span>
               </div>
               <div class="mdl-card__actions">
-                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/contact">
                   Contact
                   <i class="material-icons">chevron_right</i>
                 </a>

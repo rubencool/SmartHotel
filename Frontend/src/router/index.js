@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import MenuRoute from '@/components/MenuRoute'
 import RegisterTable from '@/components/RegisterTable'
+import Contact from '@/components/Contact'
+import AboutUs from '@/components/AboutUs'
+
 
 Vue.use(Router)
 
@@ -13,10 +16,21 @@ export default new Router({
       name: 'Home',
       component: Home
     },
+
     {
       path: '/menu',
       name: 'MeuRoute',
       component: MenuRoute
+    },
+    {
+      path: '/about',
+      name: 'AboutUs',
+      component: AboutUs
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     },
     {
       path: '/register',
