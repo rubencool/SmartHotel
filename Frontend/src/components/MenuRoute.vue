@@ -51,11 +51,13 @@
         category: [],
         errors: [],
         url: '../assets/icon/icon_drinks.png',
-        msg: 'MenuRoute'
+        msg: 'MenuRoute',
+        registered: this.$route.params.registered,
+        tableId: this.$route.params.tableId
       }
     },
-    created () {
-      this.loadCategory()
+    mounted () {
+      this.isRegistered()
     },
     methods: {
       loadCategory: function () {
@@ -73,6 +75,13 @@
       getImgUrl: function (image) {
         var images = require.context('../assets/icon', false, /\.png$/)
         return images('./' + image)
+      },
+      isRegistered: function () {
+        if (this.registered === false) {
+          this.$router.push('/register')
+        } else {
+          this.loadCategory()
+        }
       }
     }
   }

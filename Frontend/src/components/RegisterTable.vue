@@ -1,56 +1,80 @@
 <template>
   <div class="RegisterTable">
-      <h1>Register Table </h1>
-      <!-- <ul id="list"></ul> -->
-      <input id="Qrcode" v-model="code"/>
-      <video autoplay id="webcam" width=320 ></video>
+    <!--mdl card-->
+    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">Register Table</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+          <h1> {{tableId}}</h1>
+          <label for="Qrcode">TableId</label>
+          <input type="text" id="Qrcode" v-model="tableId">
+        <video autoplay id="webcam" width=320 ></video>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
+      </div>
+    </div>
   </div>
-
-  <!--form-->
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
     name: 'RegisterTable',
+    code: '',
     data () {
       return {
         msg: 'RegisterTable',
-        code: '',
         errors: [],
-        file: '',
-        url: 'http://api.qrserver.com/v1/read-qr-code/',
-        path: ''
+        registered: false,
+        tableList: [],
+        tableId: 'hello'
       }
     },
     mounted () {
       this.Qrscan()
+      this.getTableList()
     },
     methods: {
       Qrscan: function () {
-        var data = "";
+        var vm = this
         require('../../static/js/qrscan/qrscan.js')
-        // require('../../static/js/qrscan/decoder.js')
-        QRReader.init('#webcam','../../static/js/qrscan/')
+//        console.log(this.tableId)
+        QRReader.init('#webcam', '../../static/js/qrscan/')
         function scan () {
           QRReader.scan(function (result) {
-              data = result
-              var Qrcode = document.getElementById("Qrcode").value = "";
-              var Qrcode = document.getElementById("Qrcode").value = data;
-
-
-              // var list = document.getElementById("list");
-              // var li = document.createElement("li");
-              // li.appendChild(document.createTextNode(data));
-              // list.appendChild(li);
-              console.log(data);
-              return
-            setTimeout(scan, 1)
+            vm.tableId = result
+//          register
+            vm.register()
+            console.log(result)
+            return
+//            setTimeout(scan, 1)
           })
         }
         scan()
       },
-      setCode: function (data){
-        this.code = data.data
+      setTableId: function () {
+        this.tableId = document.getElementById("Qrcode").value
+      },
+      getTableList: function () {
+        axios.get('http://127.0.0.1:8000/api/food/table')
+          .then(response => {
+            console.log(response.data)
+            this.tableList = response.data
+          }).catch(e => {
+            this.errors.push(e)
+            console.error(e)
+          })
+      },
+      register: function () {
+        console.log('called')
+        for (var i = 0; i < this.tableList.length; i++) {
+          if (this.tableId === this.tableList[i].tabel_Id) {
+            this.registered = true
+            this.$router.push('menu/' + this.registered + '/' + this.tableId)
+          }
+        }
       }
     }
   }
