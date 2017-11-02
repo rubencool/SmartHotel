@@ -88,7 +88,7 @@
             </span>
             </div>
             <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/contact">
                 Contact
                 <i class="material-icons">chevron_right</i>
               </a>
