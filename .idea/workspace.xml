@@ -9,7 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/main.js" afterPath="$PROJECT_DIR$/Frontend/src/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/router/index.js" afterPath="$PROJECT_DIR$/Frontend/src/router/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js" afterPath="$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js" />
     </list>
@@ -32,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -44,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrscan.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qrscan.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -126,6 +125,13 @@
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
@@ -349,11 +355,25 @@
       <option name="project" value="LOCAL" />
       <updated>1509615062627</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="auto register when Qrcode is Scaned">
+      <created>1509615107321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1509615107321</updated>
+    </task>
+    <task id="LOCAL-00007" summary="auto register when Qrcode is Scaned">
+      <created>1509615121496</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509615121496</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7932000" />
+    <option name="totallyTimeSpent" value="8209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,14 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/smart-hotel/src/components/LoginComponent.vue" />
     <entry file="file://$PROJECT_DIR$/Frontend/smart-hotel/src/components/HelloWorld.vue" />
     <entry file="file://$PROJECT_DIR$/Frontend/smart-hotel/index.html" />
@@ -586,6 +598,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

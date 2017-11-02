@@ -20,7 +20,14 @@ from .views import (
 	OrderListAPIView,
 	OrderDetailAPIView,
 	OrderUpdateAPIView,
-	OrderDeleteAPIView
+	OrderDeleteAPIView,
+
+	#order
+    TableCreateAPIView,
+   	TableListAPIView,
+   	TableDetailAPIView,
+   	TableUpdateAPIView,
+   	TableDeleteAPIView
 )
 
 
@@ -44,4 +51,11 @@ urlpatterns = [
 	url(r'^order/(?P<pk>\d+)/$', OrderDetailAPIView.as_view(), name='order-detail'),
 	url(r'^order/(?P<pk>\d+)/edit/$', OrderUpdateAPIView.as_view(), name='order-update'),
 	url(r'^order/(?P<pk>\d+)/delete/$', OrderDeleteAPIView.as_view(), name='order-delete'),
+
+# table
+	url(r'^table/create$', TableCreateAPIView.as_view(), name='table-create'),
+	url(r'^table$', TableListAPIView.as_view(), name='table-list'),
+	url(r'^table/(?P<pk>\d+)/$', TableDetailAPIView.as_view(), name='table-detail'),
+	url(r'^table/(?P<pk>\d+)/edit/$', TableUpdateAPIView.as_view(), name='table-update'),
+	url(r'^table/(?P<pk>\d+)/delete/$', TableDeleteAPIView.as_view(), name='table-delete'),
 ]

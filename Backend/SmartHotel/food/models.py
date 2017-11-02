@@ -36,7 +36,8 @@ class Item(models.Model):
 
 #Table model
 class Table(models.Model):
-	section = models.CharField(max_length = 100)
+    tabel_Id = models.CharField(max_length = 10)
+    section = models.CharField(max_length = 100)
 
-	def __str__(self):
-		return self.section
+    def __str__(self):
+        return self.section

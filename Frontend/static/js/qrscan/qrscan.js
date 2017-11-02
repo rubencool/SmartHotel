@@ -56,14 +56,14 @@ QRReader.init = function (webcam_selector, baseurl) {
 	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
 		startCapture(null);
 	else {
-		navigator.mediaDevices.enumerateDevices().then(function(sources){ 
+		navigator.mediaDevices.enumerateDevices().then(function(sources){
 		// MediaStreamTrack.getSources(function (sources) {
 			var found_env_cam = false;
 			for (var i = 0; i < sources.length; i++) {
 				if (sources[i].kind == "video" && sources[i].facing == "environment") {
 					var constraints = {optional: [{sourceId: sources[i].id}]};
 					startCapture(constraints);
-					
+
 					found_env_cam = true;
 				}
 			}

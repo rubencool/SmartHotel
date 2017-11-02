@@ -13,14 +13,14 @@ from rest_framework.permissions import (
 	IsAuthenticatedOrReadOnly,
 	)
 
-from food.models import Category, Item, Order
+from food.models import Category, Item, Order, Table
 
 from .permissions import IsOwnerOrReadOnly
 
 from .serializers import (
 	CategorySerializer,
 	CategoryCreateSerializer,
-	ItemSerializer, OrderSerializer)
+	ItemSerializer, OrderSerializer, TableSerializer)
 
 class CategoryCreateAPIView(CreateAPIView):
 	queryset = Category.objects.all()
@@ -92,3 +92,26 @@ class OrderUpdateAPIView(RetrieveUpdateAPIView):
 class OrderDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Order.objects.all()
 	serializer_class = OrderSerializer
+
+
+# Table
+class TableCreateAPIView(CreateAPIView):
+	queryset = Table.objects.all()
+	serializer_class = TableSerializer
+
+class TableListAPIView(ListAPIView):
+	queryset = Table.objects.all()
+	serializer_class = TableSerializer
+
+
+class TableDetailAPIView(RetrieveAPIView):
+	queryset = Table.objects.all()
+	serializer_class = TableSerializer
+
+class TableUpdateAPIView(RetrieveUpdateAPIView):
+	queryset = Table.objects.all()
+	serializer_class = TableSerializer
+
+class TableDeleteAPIView(RetrieveDestroyAPIView):
+	queryset = Table.objects.all()
+	serializer_class = TableSerializer

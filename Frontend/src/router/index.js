@@ -11,6 +11,11 @@ import Drink from '@/components/Drink'
 
 Vue.use(Router)
 
+const router = new Router({
+  routes: [],
+  mode: 'history'
+})
+
 export default new Router({
   routes: [
     {
@@ -20,7 +25,7 @@ export default new Router({
     },
 
     {
-      path: '/menu',
+      path: '/menu/:registered/:tableId',
       name: 'MeuRoute',
       component: MenuRoute,
       children: [
