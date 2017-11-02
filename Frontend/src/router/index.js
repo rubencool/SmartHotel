@@ -5,6 +5,8 @@ import MenuRoute from '@/components/MenuRoute'
 import RegisterTable from '@/components/RegisterTable'
 import Contact from '@/components/Contact'
 import AboutUs from '@/components/AboutUs'
+import Drink from '@/components/Drink'
+
 
 
 Vue.use(Router)
@@ -20,7 +22,13 @@ export default new Router({
     {
       path: '/menu',
       name: 'MeuRoute',
-      component: MenuRoute
+      component: MenuRoute,
+      children: [
+        {
+          path: '/drinks',
+          component: Drink
+        }
+      ]
     },
     {
       path: '/about',
