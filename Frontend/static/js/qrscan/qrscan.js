@@ -2,6 +2,7 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia
 	|| navigator.mozGetUserMedia || navigator.msGetUserMedia
 	|| navigator.oGetUserMedia;
 
+var localStream ;
 var QRReader = {};
 QRReader.active = false;
 QRReader.webcam = null;
@@ -51,6 +52,10 @@ QRReader.init = function (webcam_selector, baseurl) {
 		});
 	}
 
+  function stopCapture() {
+	  QRReader.webcam.srcObject.stop();
+  }
+
 	// Firefox lets users choose their camera, so no need to search for an environment
 	// facing camera
 	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
@@ -73,6 +78,12 @@ QRReader.init = function (webcam_selector, baseurl) {
 		});
 	}
 }
+
+QRReader.stop = function (stream) {
+  localStream = stream;
+  localStream.stop();
+}
+
 
 /**
  * QRReader Scan Action

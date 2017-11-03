@@ -12,7 +12,7 @@
               <div class="mdl-card__media">
                 <!--<img :src="getImgUrl(cat.icon)"/>-->
             <!--TODO dynamic img url-->
-                <img src="../assets/icon/icon_maindish.png"/>
+                <img src="../assets/icon/icon_maindish.png" v-on:load="reloadPage()"/>
               </div>
               <div class="mdl-card__supporting-text">
               <span class="mdl-typography--font-light mdl-typography--subhead">
@@ -30,6 +30,8 @@
             </div>
           </div>
         </div>
+        <h1>{{tableId}}</h1>
+
       </div>
     </div>
     <!--end-->
@@ -38,12 +40,12 @@
         {{error.message}}
       </li>
     </ul>
-        <router-view/>
   </div>
 </template>
 
 <script>
   import axios from 'axios'
+  import cookie from 'vue-cookie'
   export default {
     name: 'MenuRoute',
     data () {
@@ -52,16 +54,16 @@
         errors: [],
         url: '../assets/icon/icon_drinks.png',
         msg: 'MenuRoute',
-        registered: this.$route.params.registered,
-        tableId: this.$route.params.tableId
+//        registered: false,
+        tableId: cookie.get('customerTableId')
       }
     },
     mounted () {
-      this.isRegistered()
+      this.isCustomerRegistered()
     },
     methods: {
       loadCategory: function () {
-        axios.get('http://18cb5d26.ngrok.io/api/food/category')
+        axios.get('http://localhost:8000/api/food/category')
           .then(response => {
             console.log(response.data)
             this.category = response.data
@@ -76,13 +78,20 @@
         var images = require.context('../assets/icon', false, /\.png$/)
         return images('./' + image)
       },
-      isRegistered: function () {
-        if (this.registered === false) {
+      isCustomerRegistered: function () {
+        if (cookie.get('customerRegistered') === null) {
           this.$router.push('/register')
         } else {
           this.loadCategory()
+
         }
-      }
+      },
+      reloadPage: function () {
+        if(this.$parent.reloadMenu === true) {
+          this.$parent.reloadMenu = false
+          location.reload();
+        }
+      },
     }
   }
 </script>

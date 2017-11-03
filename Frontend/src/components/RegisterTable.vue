@@ -1,4 +1,5 @@
 <template>
+  <div class="android-more-section">
   <div class="RegisterTable">
     <!--mdl card-->
     <div class="demo-card-square mdl-card mdl-shadow--2dp">
@@ -6,35 +7,36 @@
         <h2 class="mdl-card__title-text">Register Table</h2>
       </div>
       <div class="mdl-card__supporting-text">
-          <h1> {{tableId}}</h1>
+        <h1>{{msg}}</h1>
           <label for="Qrcode">TableId</label>
           <input type="text" id="Qrcode" v-model="tableId">
-        <video autoplay id="webcam" width=320 ></video>
+        <video autoplay id="webcam" width="250" height="250" ></video>
       </div>
       <div class="mdl-card__actions mdl-card--border">
         <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
   import axios from 'axios'
+  import cookie from 'vue-cookie'
   export default {
     name: 'RegisterTable',
     code: '',
     data () {
       return {
-        msg: 'RegisterTable',
+        msg: '',
         errors: [],
         registered: false,
         tableList: [],
-        tableId: 'hello'
+        tableId: ''
       }
     },
     mounted () {
-      this.Qrscan()
-      this.getTableList()
+      this.isCustomerRegistered()
     },
     methods: {
       Qrscan: function () {
@@ -49,10 +51,11 @@
             vm.register()
             console.log(result)
             return
-//            setTimeout(scan, 1)
+//            setTimeout(scan, 200)
           })
         }
         scan()
+//        MediaStreamTrack.stop()
       },
       setTableId: function () {
         this.tableId = document.getElementById("Qrcode").value
@@ -71,9 +74,32 @@
         console.log('called')
         for (var i = 0; i < this.tableList.length; i++) {
           if (this.tableId === this.tableList[i].tabel_Id) {
-            this.registered = true
-            this.$router.push('menu/' + this.registered + '/' + this.tableId)
+            cookie.set('customerTableId',this.tableId, 1);
+//            if(cookie.get('customerRegistered') === 'false') {
+//              cookie.delete('customerRegistered');
+              cookie.set('customerRegistered','true', 1);
+//            }else{
+//              cookie.set('customerRegistered','true',1);
+//            }
+//            this.$parent.CustomerTableId = this.tableId;
+//            this.$parent.CustomerRegistered = true;
+            this.$parent.reloadMenu = true;
+            this.$router.push('menu/')
+//            this.router.go('/');
+//            window.location.href = "http://localhost:8080/#/menu/true/gardenA1";
+//            location.replace('http://localhost:8080/#/menu/true/gardenA1')
+          }else{
+            this.msg = 'Invalid  !!!'
           }
+        }
+      },
+      isCustomerRegistered: function () {
+        if (cookie.get('customerRegistered') === 'true'){
+          this.$router.push('menu/')
+        }else {
+          this.Qrscan()
+          this.getTableList()
+
         }
       }
     }
