@@ -1,42 +1,42 @@
 <template>
+  <div class="android-more-section">
   <div class="RegisterTable">
-    <div class="android-more-section">
-      <!--mdl card-->
-      <div class="demo-card-square mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand">
-          <h2 class="mdl-card__title-text">Register Table</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            <h1> {{tableId}}</h1>
-            <label for="Qrcode">TableId</label>
-            <input type="text" id="Qrcode" v-model="tableId">
-          <video autoplay id="webcam" width=320 ></video>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
-        </div>
+    <!--mdl card-->
+    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">Register Table</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <h1>{{msg}}</h1>
+          <label for="Qrcode">TableId</label>
+          <input type="text" id="Qrcode" v-model="tableId">
+        <video autoplay id="webcam" width="250" height="250" ></video>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register" v-on:click="register()">
       </div>
     </div>
+  </div>
   </div>
 </template>
 
 <script>
   import axios from 'axios'
+  import cookie from 'vue-cookie'
   export default {
     name: 'RegisterTable',
     code: '',
     data () {
       return {
-        msg: 'RegisterTable',
+        msg: '',
         errors: [],
         registered: false,
         tableList: [],
-        tableId: 'hello'
+        tableId: ''
       }
     },
     mounted () {
-      this.Qrscan()
-      this.getTableList()
+      this.isCustomerRegistered()
     },
     methods: {
       Qrscan: function () {
@@ -51,7 +51,7 @@
             vm.register()
             console.log(result)
             return
-//            setTimeout(scan, 1)
+//            setTimeout(scan, 200)
           })
         }
         scan()
@@ -73,10 +73,36 @@
         console.log('called')
         for (var i = 0; i < this.tableList.length; i++) {
           if (this.tableId === this.tableList[i].tabel_Id) {
-            this.registered = true
-            this.$router.push('menu/' + this.registered + '/' + this.tableId)
+            cookie.set('customerTableId',this.tableId, 1);
+            cookie.set('customerRegistered','true', 1);
+            this.$parent.reloadMenu = true;
+            this.putTableRegistered();
+            this.$router.push('menu/')
+          }else{
+            this.msg = 'Invalid  !!!'
+            location.reload();
           }
         }
+      },
+      isCustomerRegistered: function () {
+        if (cookie.get('customerRegistered') === 'true'){
+          this.$router.push('menu/')
+        }else {
+          this.Qrscan()
+          this.getTableList()
+
+        }
+      },
+      putTableRegistered: function () {
+        axios.put('http://127.0.0.1:8000/api/food/table/1/',{
+          registered: true
+        })
+          .then(response => {
+            console.log(response)
+          }).catch(e => {
+          this.errors.push(e)
+          console.error(e)
+        })
       }
     }
   }

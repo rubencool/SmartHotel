@@ -64,13 +64,6 @@
           <div class="android-card-container mdl-grid">
             <h2>Contact Us</h2> <br>
 
-            <h3> <p>Utsha Tech Pvt. Ltd.<br>
-              Newroad Pokhara<br>
-              Phone: 061-4242196, 061-4102655, 9856078917 <br>
-              Email: info@utshatech.com <br>
-              : utshatech@gmail.com <br>
-              URL: www.utshagroup.com</p> </h3>
-
             <div class="container">
               <form action="/action_page.php">
                 <div class="row">
