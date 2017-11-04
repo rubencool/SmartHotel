@@ -61,7 +61,7 @@
     },
     methods: {
       loadCategory: function () {
-        axios.get('http://18cb5d26.ngrok.io/api/food/category')
+        axios.get('http://a5d3294d.ngrok.io/api/food/category')
           .then(response => {
             console.log(response.data)
             this.category = response.data

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e203a6f-9993-4ec5-99eb-b3807fcd8293" name="Default" comment="auto register when Qrcode is Scaned">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/migrations/0004_table_tabel_id.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/router/index.js" afterPath="$PROJECT_DIR$/Frontend/src/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js" afterPath="$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,29 +19,48 @@
       <file leaf-file-name="RegisterTable.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1509615349826" expanded="true" signature="787:800" ph="..." />
+                <marker date="1509615349826" expanded="true" signature="787:811" ph="..." />
+                <marker date="1509615349826" expanded="true" signature="842:2423" ph="..." />
+                <marker date="1509615349826" expanded="true" signature="889:2414" ph="{&quot;name&quot;: 'RegisterTable'...}" />
+                <marker date="1509615349826" expanded="true" signature="944:1099" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="959:1093" ph="{&quot;msg&quot;: 'RegisterTable'...}" />
+                <marker date="1509615349826" expanded="true" signature="1116:1169" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1184:2410" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1212:1664" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1409:1641" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1453:1630" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1696:1768" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1802:2081" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1890:1985" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="1998:2072" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="2111:2404" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="2199:2396" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="2260:2386" ph="{...}" />
+                <marker date="1509615349826" expanded="true" signature="2439:2722" ph="..." />
+                <marker date="1509615349826" expanded="true" signature="2470:2557" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrscan.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrscan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="272">
               <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
@@ -56,6 +70,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -100,7 +115,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,13 +144,6 @@
               <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,6 +165,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,128 +175,6 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="ignore_missing_gitignore" value="true" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/App.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Home.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/router/index.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/package-lock.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/AboutUs.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Contact.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Drink.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Header.vue</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -319,6 +205,7 @@
       <workItem from="1508176552386" duration="27000" />
       <workItem from="1508656442685" duration="238000" />
       <workItem from="1509178517682" duration="1441000" />
+      <workItem from="1509615470848" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="eslit dissable / css changed /Qrcode working in laptop (Phase -I)">
       <created>1509179675148</created>
@@ -355,25 +242,11 @@
       <option name="project" value="LOCAL" />
       <updated>1509615062627</updated>
     </task>
-    <task id="LOCAL-00006" summary="auto register when Qrcode is Scaned">
-      <created>1509615107321</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1509615107321</updated>
-    </task>
-    <task id="LOCAL-00007" summary="auto register when Qrcode is Scaned">
-      <created>1509615121496</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1509615121496</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8209000" />
+    <option name="totallyTimeSpent" value="7944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,34 +258,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="267" y="24" width="1368" height="741" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4973939" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.50558454" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.4944155" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.4944155" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47278383" sideWeight="0.49069247" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5800933" sideWeight="0.49069247" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4973939" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.50558454" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970452" sideWeight="0.4944155" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5800933" sideWeight="0.49069247" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -487,20 +351,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/npm-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
     <entry file="file://$PROJECT_DIR$/Frontend/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,9 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="106" column="18" lean-forward="true" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="27" />
-          <folding>
-            <element signature="e#5016#5133#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,6 +405,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <marker date="1509615349826" expanded="true" signature="787:800" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="787:811" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="842:2423" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="889:2414" ph="{&quot;name&quot;: 'RegisterTable'...}" />
+            <marker date="1509615349826" expanded="true" signature="944:1099" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="959:1093" ph="{&quot;msg&quot;: 'RegisterTable'...}" />
+            <marker date="1509615349826" expanded="true" signature="1116:1169" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1184:2410" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1212:1664" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1409:1641" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1453:1630" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1696:1768" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1802:2081" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1890:1985" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1998:2072" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2111:2404" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2199:2396" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2260:2386" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2439:2722" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="2470:2557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -585,9 +466,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <marker date="1509615349826" expanded="true" signature="787:800" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="787:811" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="842:2423" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="889:2414" ph="{&quot;name&quot;: 'RegisterTable'...}" />
+            <marker date="1509615349826" expanded="true" signature="944:1099" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="959:1093" ph="{&quot;msg&quot;: 'RegisterTable'...}" />
+            <marker date="1509615349826" expanded="true" signature="1116:1169" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1184:2410" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1212:1664" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1409:1641" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1453:1630" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1696:1768" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1802:2081" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1890:1985" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="1998:2072" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2111:2404" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2199:2396" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2260:2386" ph="{...}" />
+            <marker date="1509615349826" expanded="true" signature="2439:2722" ph="..." />
+            <marker date="1509615349826" expanded="true" signature="2470:2557" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,16 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -1,18 +1,20 @@
 <template>
   <div class="RegisterTable">
-    <!--mdl card-->
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">Register Table</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-          <h1> {{tableId}}</h1>
-          <label for="Qrcode">TableId</label>
-          <input type="text" id="Qrcode" v-model="tableId">
-        <video autoplay id="webcam" width=320 ></video>
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
+    <div class="android-more-section">
+      <!--mdl card-->
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">Register Table</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <h1> {{tableId}}</h1>
+            <label for="Qrcode">TableId</label>
+            <input type="text" id="Qrcode" v-model="tableId">
+          <video autoplay id="webcam" width=320 ></video>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
+        </div>
       </div>
     </div>
   </div>
