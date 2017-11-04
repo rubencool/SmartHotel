@@ -101,7 +101,6 @@
 </template>
 
 <script>
-  import cookie from 'vue-cookie'
   export default {
       name: 'Home',
       data () {
@@ -110,7 +109,6 @@
         }
       }
     }
-//  cookie.set('customerRegistered', false, 1);
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

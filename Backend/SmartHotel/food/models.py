@@ -38,6 +38,7 @@ class Item(models.Model):
 class Table(models.Model):
     tabel_Id = models.CharField(max_length = 10)
     section = models.CharField(max_length = 100)
+    registered = models.BooleanField(default=False)
 
     def __str__(self):
         return self.section

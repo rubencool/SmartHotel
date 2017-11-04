@@ -13,7 +13,7 @@
         <video autoplay id="webcam" width="250" height="250" ></video>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register">
+        <input type="submit" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Register" v-on:click="register()">
       </div>
     </div>
   </div>
@@ -55,7 +55,6 @@
           })
         }
         scan()
-//        MediaStreamTrack.stop()
       },
       setTableId: function () {
         this.tableId = document.getElementById("Qrcode").value
@@ -75,21 +74,13 @@
         for (var i = 0; i < this.tableList.length; i++) {
           if (this.tableId === this.tableList[i].tabel_Id) {
             cookie.set('customerTableId',this.tableId, 1);
-//            if(cookie.get('customerRegistered') === 'false') {
-//              cookie.delete('customerRegistered');
-              cookie.set('customerRegistered','true', 1);
-//            }else{
-//              cookie.set('customerRegistered','true',1);
-//            }
-//            this.$parent.CustomerTableId = this.tableId;
-//            this.$parent.CustomerRegistered = true;
+            cookie.set('customerRegistered','true', 1);
             this.$parent.reloadMenu = true;
+            this.putTableRegistered();
             this.$router.push('menu/')
-//            this.router.go('/');
-//            window.location.href = "http://localhost:8080/#/menu/true/gardenA1";
-//            location.replace('http://localhost:8080/#/menu/true/gardenA1')
           }else{
             this.msg = 'Invalid  !!!'
+            location.reload();
           }
         }
       },
@@ -101,6 +92,17 @@
           this.getTableList()
 
         }
+      },
+      putTableRegistered: function () {
+        axios.put('http://127.0.0.1:8000/api/food/table/1/',{
+          registered: true
+        })
+          .then(response => {
+            console.log(response)
+          }).catch(e => {
+          this.errors.push(e)
+          console.error(e)
+        })
       }
     }
   }
