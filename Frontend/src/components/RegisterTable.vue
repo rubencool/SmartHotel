@@ -46,6 +46,7 @@
         QRReader.init('#webcam', '../../static/js/qrscan/')
         function scan () {
           QRReader.scan(function (result) {
+          console.log(result)
             vm.tableId = result
 //          register
             vm.register()
@@ -113,7 +114,6 @@
     width: 320px;
     height: auto;
     margin-left: 20px;
-    margin-top: 140px;
   }
 
   .demo-card-square > .mdl-card__title {

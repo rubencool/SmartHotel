@@ -19,18 +19,18 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-
     {
       path: '/menu',
       name: 'MeuRoute',
       component: MenuRoute,
       children: [
         {
-          path: '/drinks',
+          path: 'drinks',
           component: Drink
         }
       ]
     },
+
     {
       path: '/about',
       name: 'AboutUs',
