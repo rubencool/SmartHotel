@@ -1,10 +1,9 @@
 <template>
   <div class="Menu">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
+    <div class="android-more-section">
       <!--content-->
       <div class="android-content mdl-layout__content">
-        <div class="android-more-section">
+        
           <div class="android-card-container mdl-grid" v-if="category && category.length">
 
             <!--order-->
@@ -20,7 +19,7 @@
               </span>
               </div>
               <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" v-bind:style="{fontSize: 14+'px'}" v-bind:href="'#/menu/'+cat.cat_name.toLowerCase()" >
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" v-bind:style="{fontSize: 13+'px'}" v-bind:href="'#/items/'+cat.cat_name.toLowerCase()" >
                 {{cat.cat_name}}
                 <i class="material-icons">
                   chevron_right
@@ -32,14 +31,13 @@
         </div>
         <h1>{{tableId}}</h1>
 
-      </div>
-    </div>
     <!--end-->
     <ul v-if="errors && errors.length">
       <li v-for="error in errors">
         {{error.message}}
       </li>
     </ul>
+    </div>
   </div>
 
 </template>
@@ -135,9 +133,6 @@
     width: 30px;
   }
 
-  .mdl-layout__header {
-    background-color: white;
-  }
 
   .mdl-layout__header-row .mdl-navigation__link {
     color: #757575;

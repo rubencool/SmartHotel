@@ -80,7 +80,7 @@
               <img src="../assets/icon/icon_contact.png">
             </div>
             <div class="mdl-card__title">
-              <h4 class="mdl-card__title-text">Contact</h4>
+              <h4 class="mdl-card__title-text">Register</h4>
             </div>
             <div class="mdl-card__supporting-text">
             <span class="mdl-typography--font-light mdl-typography--subhead">
@@ -88,20 +88,21 @@
             </span>
             </div>
             <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/contact">
-                Contact
+              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#/register">
+                Register
                 <i class="material-icons">chevron_right</i>
               </a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
+    export default {
       name: 'Home',
       data () {
         return {

@@ -1,15 +1,12 @@
 <template>
 	<div class="drinksContainer">
-
-	<!--yet to work on drinkroute-->
-	
-		<div class="android-more-section">
+		<div class="mdl-tabs__panel" id="drink">
 			<ul class="demo-list-two mdl-list"  >
 			  <li class="mdl-list__item mdl-list__item--two-line" v-for= "item in itemlist" v-if="item.in_category===1">
 			    <span class="mdl-list__item-primary-content">
 			      <i class="material-icons mdl-list__item-avatar">person</i>
 			      <span>{{item.itm_name}}</span>
-			      <span class="mdl-list__item-sub-title">62 Episodes</span>
+			      <span class="mdl-list__item-sub-title">{{item.details}}</span>
 			    </span>
 			    <span class="mdl-list__item-secondary-content">
 			      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">chevron_right</i></a>
@@ -22,12 +19,11 @@
 <script>
 import axios from 'axios'
 export default {
-	name: 'DrinkRoute',
+	name: 'drinks',
 	data () {
 		return{
 			itemlist: [],
 			errors: [],
-			drinklist: []
 		}
 	},
 	created () {
@@ -50,5 +46,8 @@ export default {
 <style scoped>
 .demo-list-two {
   width: 300px;
+}
+.android-more-section{
+	padding-left: 30px;
 }
 </style>
