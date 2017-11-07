@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from staff.models import Member
 
+
 # Create your models here.
 class Category(models.Model):
 	cat_name = models.CharField(max_length = 25)
@@ -10,16 +11,6 @@ class Category(models.Model):
 
 	def __str__(self):
 		return self.cat_name
-
-# Order model
-class Order(models.Model):
-	table_no = models.ForeignKey("Table")
-	item = models.ForeignKey("Item")
-	quantity =models.FloatField()
-	which_waiter = models.ForeignKey(Member, blank=True, null=True)
-
-	def __int__(self):
-		return self.id
 
 # Item Model
 class Item(models.Model):
@@ -32,13 +23,23 @@ class Item(models.Model):
 	def __str__(self):
 		return self.itm_name
 
+#section model
+class Section(models.Model):
+    section_name = models.CharField(max_length = 10)
+    #imgPath = models.CharField(max_length = 30)
+    created_at = models.DateTimeField(auto_now_add=True, blank=True)
+    #img = models.FileField(upload_to="uploads")
 
+    def __str__(self):
+        return self.section_name
 
 #Table model
 class Table(models.Model):
-    tabel_Id = models.CharField(max_length = 10)
-    section = models.CharField(max_length = 100)
+    table_id = models.CharField(max_length = 10)
+    section = models.ForeignKey(Section)
     registered = models.BooleanField(default=False)
+    checkout = models.BooleanField(default=False)
+    cust_id = models.IntegerField(default = 0)
 
     def __str__(self):
-        return self.section
+        return self.table_id

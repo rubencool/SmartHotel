@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <app-header></app-header>
     <router-view/>
   </div>
 </template>
@@ -12,14 +11,19 @@ export default {
     return {
       reloadMenu : false,
       CustomerRegistered: true,
-      CustomerTableId: ''
+      CustomerTableId: '',
+      load: ''
     }
   },
   name: 'app',
   code: '',
   components:{
     'app-header': Header
+  },
+  mounted(){
+    this.load= document.URL;
   }
+
 }
 </script>
 

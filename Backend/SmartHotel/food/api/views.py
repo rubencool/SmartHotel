@@ -13,14 +13,16 @@ from rest_framework.permissions import (
 	IsAuthenticatedOrReadOnly,
 	)
 
-from food.models import Category, Item, Order, Table
+from food.models import Category, Item, Table, Section
 
 from .permissions import IsOwnerOrReadOnly
 
 from .serializers import (
 	CategorySerializer,
 	CategoryCreateSerializer,
-	ItemSerializer, OrderSerializer, TableSerializer)
+	ItemSerializer, TableSerializer,
+	SectionSerializer
+	)
 
 class CategoryCreateAPIView(CreateAPIView):
 	queryset = Category.objects.all()
@@ -69,31 +71,6 @@ class ItemDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
 
-# Order
-class OrderCreateAPIView(CreateAPIView):
-	queryset = Order.objects.all()
-	serializer_class = OrderSerializer
-	permission_classes = [IsAdminUser]
-
-class OrderListAPIView(ListAPIView):
-	queryset = Order.objects.all()
-	serializer_class = OrderSerializer
-
-
-class OrderDetailAPIView(RetrieveAPIView):
-	queryset = Order.objects.all()
-	serializer_class = OrderSerializer
-
-class OrderUpdateAPIView(RetrieveUpdateAPIView):
-	queryset = Order.objects.all()
-	serializer_class = OrderSerializer
-	permission_classes = [IsAdminUser]
-
-class OrderDeleteAPIView(RetrieveDestroyAPIView):
-	queryset = Order.objects.all()
-	serializer_class = OrderSerializer
-
-
 # Table
 class TableCreateAPIView(CreateAPIView):
 	queryset = Table.objects.all()
@@ -115,3 +92,49 @@ class TableUpdateAPIView(RetrieveUpdateAPIView):
 class TableDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Table.objects.all()
 	serializer_class = TableSerializer
+
+class RegisteredTableAPIView(ListAPIView):
+    queryset = Table.objects.filter(registered = True)
+    serializer_class = TableSerializer
+
+class UnRegisteredTableAPIView(ListAPIView):
+    queryset = Table.objects.filter(registered = False)
+    serializer_class = TableSerializer
+
+class CheckoutTableAPIView(ListAPIView):
+    queryset = Table.objects.filter(registered = False, checkout = True)
+    serializer_class = TableSerializer
+
+class UnCheckoutTableAPIView(ListAPIView):
+    queryset = Table.objects.filter(registered = True, checkout = False)
+    serializer_class = TableSerializer
+
+class SectionQueryAPIView(ListAPIView):
+    serializer_class = TableSerializer
+    lookup_field = 'section'
+    def get_queryset(self):
+        section = self.kwargs["section"]
+
+        return Table.objects.filter(section= section)
+
+# section
+class SectionCreateAPIView(CreateAPIView):
+	queryset = Section.objects.all()
+	serializer_class = SectionSerializer
+
+class SectionListAPIView(ListAPIView):
+	queryset = Section.objects.all()
+	serializer_class = SectionSerializer
+
+
+class SectionDetailAPIView(RetrieveAPIView):
+	queryset = Section.objects.all()
+	serializer_class = SectionSerializer
+
+class SectionUpdateAPIView(RetrieveUpdateAPIView):
+	queryset = Section.objects.all()
+	serializer_class = SectionSerializer
+
+class SectionDeleteAPIView(RetrieveDestroyAPIView):
+	queryset = Section.objects.all()
+	serializer_class = SectionSerializer

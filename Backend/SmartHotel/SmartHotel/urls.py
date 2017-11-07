@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/food/',include("food.api.urls", namespace = 'food-api')),
     url(r'^api/staff/',include("staff.api.urls", namespace = 'staff-api')),
+    url(r'^api/customer/',include("customer.api.urls", namespace = 'customer-api')),
 ]

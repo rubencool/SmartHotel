@@ -2,20 +2,14 @@ from rest_framework.serializers import ModelSerializer
 
 from food.models import (
 	Category,
-	Order,
 	Item,
-	Table
+	Table,
+	Section
 )
 
 class CategorySerializer(ModelSerializer):
 	class Meta:
 		model = Category
-		fields = '__all__'
-
-
-class OrderSerializer(ModelSerializer):
-	class Meta:
-		model = Order
 		fields = '__all__'
 
 class ItemSerializer(ModelSerializer):
@@ -33,4 +27,9 @@ class CategoryCreateSerializer(ModelSerializer):
 class TableSerializer(ModelSerializer):
 	class Meta:
 		model = Table
+		fields = '__all__'
+
+class SectionSerializer(ModelSerializer):
+	class Meta:
+		model = Section
 		fields = '__all__'

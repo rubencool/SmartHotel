@@ -15,20 +15,25 @@ from .views import (
 	ItemUpdateAPIView,
 	ItemDeleteAPIView,
 
-	#order
-	OrderCreateAPIView,
-	OrderListAPIView,
-	OrderDetailAPIView,
-	OrderUpdateAPIView,
-	OrderDeleteAPIView,
+	# section
+   	SectionCreateAPIView,
+   	SectionListAPIView,
+   	SectionDetailAPIView,
+   	SectionUpdateAPIView,
+   	SectionDeleteAPIView,
 
-	#order
+	#table
     TableCreateAPIView,
    	TableListAPIView,
    	TableDetailAPIView,
    	TableUpdateAPIView,
-   	TableDeleteAPIView
-)
+   	TableDeleteAPIView,
+   	RegisteredTableAPIView,
+   	UnRegisteredTableAPIView,
+   	CheckoutTableAPIView,
+   	UnCheckoutTableAPIView,
+   	SectionQueryAPIView
+   	)
 
 
 urlpatterns = [
@@ -45,12 +50,13 @@ urlpatterns = [
 	url(r'^item/(?P<pk>\d+)/edit/$', ItemUpdateAPIView.as_view(), name='item-update'),
 	url(r'^item/(?P<pk>\d+)/delete/$', ItemDeleteAPIView.as_view(), name='item-delete'),
 
-# order
-	url(r'^order/create$', OrderCreateAPIView.as_view(), name='order-create'),
-	url(r'^order$', OrderListAPIView.as_view(), name='order-list'),
-	url(r'^order/(?P<pk>\d+)/$', OrderDetailAPIView.as_view(), name='order-detail'),
-	url(r'^order/(?P<pk>\d+)/edit/$', OrderUpdateAPIView.as_view(), name='order-update'),
-	url(r'^order/(?P<pk>\d+)/delete/$', OrderDeleteAPIView.as_view(), name='order-delete'),
+# 	section
+   	url(r'^section/create$', SectionCreateAPIView.as_view(), name='section-create'),
+   	url(r'^section$', SectionListAPIView.as_view(), name='section-list'),
+   	url(r'^section/(?P<pk>\d+)/$', SectionDetailAPIView.as_view(), name='section-detail'),
+   	url(r'^section/(?P<pk>\d+)/edit/$', SectionUpdateAPIView.as_view(), name='section-update'),
+   	url(r'^section/(?P<pk>\d+)/delete/$', SectionDeleteAPIView.as_view(), name='section-delete'),
+
 
 # table
 	url(r'^table/create$', TableCreateAPIView.as_view(), name='table-create'),
@@ -58,4 +64,10 @@ urlpatterns = [
 	url(r'^table/(?P<pk>\d+)/$', TableDetailAPIView.as_view(), name='table-detail'),
 	url(r'^table/(?P<pk>\d+)/edit/$', TableUpdateAPIView.as_view(), name='table-update'),
 	url(r'^table/(?P<pk>\d+)/delete/$', TableDeleteAPIView.as_view(), name='table-delete'),
+	#url(r'^table/(?P<slug>[-\w]+)-(?P<value>\d+)/$', TableQueryAPIView.as_view(), name='table-query')
+	url(r'^table/registered$', RegisteredTableAPIView.as_view(), name='registered-table-query'),
+	url(r'^table/unregistered$', UnRegisteredTableAPIView.as_view(), name='unregistered-table-query'),
+	url(r'^table/checkout$', CheckoutTableAPIView.as_view(), name='checkout-table-query'),
+	url(r'^table/uncheckout$', UnCheckoutTableAPIView.as_view(), name='uncheckout-table-query'),
+	url(r'^table/section/(?P<section>\d+)/$', SectionQueryAPIView.as_view(), name='sectiontable-query')
 ]

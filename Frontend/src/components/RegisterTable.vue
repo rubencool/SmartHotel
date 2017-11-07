@@ -32,7 +32,10 @@
         errors: [],
         registered: false,
         tableList: [],
-        tableId: ''
+        tableId: '',
+        api_table_url:'http://127.0.0.1:8000/api/food/table/',
+        table_id:'',
+        customerList:[]
       }
     },
     mounted () {
@@ -69,14 +72,37 @@
             console.error(e)
           })
       },
+      getCustomerList: function () {
+        axios.get('http://127.0.0.1:8000/api/customer/')
+          .then(response => {
+            console.log(response.data)
+            this.customerList = response.data
+          }).catch(e => {
+          this.errors.push(e)
+          console.error(e)
+        })
+      },
+      setNewCustomerList: function () {
+        axios.post('http://127.0.0.1:8000/api/customer/create', {
+          table_id: this.table_id,
+        })
+          .then(response => {
+            console.log(response.data)
+          }).catch(e => {
+          this.errors.push(e)
+          console.error(e)
+        })
+      },
       register: function () {
         console.log('called')
         for (var i = 0; i < this.tableList.length; i++) {
-          if (this.tableId === this.tableList[i].tabel_Id) {
+          if (this.tableId === this.tableList[i].table_id) {
+            this.table_id = this.tableList[i].id;
             cookie.set('customerTableId',this.tableId, 1);
             cookie.set('customerRegistered','true', 1);
             this.$parent.reloadMenu = true;
-            this.putTableRegistered();
+            this.updateTableRegistered();
+            this.setNewCustomerList()
             this.$router.push('menu/')
           }else{
             this.msg = 'Invalid  !!!'
@@ -90,12 +116,11 @@
         }else {
           this.Qrscan()
           this.getTableList()
-
         }
       },
-      putTableRegistered: function () {
-        axios.put('http://127.0.0.1:8000/api/food/table/1/',{
-          registered: true
+      updateTableRegistered: function () {
+        axios.patch(this.api_table_url + this.table_id +  '/edit/', {
+          registered: true,
         })
           .then(response => {
             console.log(response)

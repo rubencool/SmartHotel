@@ -37,7 +37,7 @@
 	            	<i class="material-icons">restaurant menu</i>
             		Menu
          		</a>
-          
+
           		<!--todo -->
 				<a class="mdl-navigation__link" href="">
 	            	<img class="nav-icon" src="../assets/icon/icon_checkout.png">
@@ -60,7 +60,8 @@ export default {
   data () {
     return {
     }
-  }
+  },
+  name: 'Header'
 }
 </script>
 

@@ -41,6 +41,7 @@
       </li>
     </ul>
   </div>
+
 </template>
 
 <script>
@@ -55,11 +56,13 @@
         url: '../assets/icon/icon_drinks.png',
         msg: 'MenuRoute',
 //        registered: false,
-        tableId: cookie.get('customerTableId')
+        tableId: cookie.get('customerTableId'),
+        customerList:[]
       }
     },
     mounted () {
       this.isCustomerRegistered()
+      this.getCustomerList()
     },
     methods: {
       loadCategory: function () {
@@ -73,6 +76,17 @@
             this.errors.push(e)
             console.error(e)
           })
+      },
+      getCustomerList: function () {
+        axios.get('http://127.0.0.1:8000/api/customer/')
+          .then(response => {
+            console.log(response.data)
+            this.customerList = response.data
+            cookie.set('customerId',this.customerList.length, 1);
+          }).catch(e => {
+          this.errors.push(e)
+          console.error(e)
+        })
       },
       getImgUrl: function (image) {
         var images = require.context('../assets/icon', false, /\.png$/)
