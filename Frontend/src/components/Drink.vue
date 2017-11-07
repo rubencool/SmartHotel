@@ -1,6 +1,6 @@
 <template>
 	<div class="drinksContainer">
-		<div class="android-more-section">
+		<div class="mdl-tabs__panel" id="drink">
 			<ul class="demo-list-two mdl-list"  >
 			  <li class="mdl-list__item mdl-list__item--two-line" v-for= "item in itemlist" v-if="item.in_category===1">
 			    <span class="mdl-list__item-primary-content">
