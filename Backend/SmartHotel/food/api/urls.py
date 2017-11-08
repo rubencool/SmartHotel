@@ -14,6 +14,7 @@ from .views import (
 	ItemDetailAPIView,
 	ItemUpdateAPIView,
 	ItemDeleteAPIView,
+	CategoryQueryAPIView,
 
 	# section
    	SectionCreateAPIView,
@@ -32,7 +33,8 @@ from .views import (
    	UnRegisteredTableAPIView,
    	CheckoutTableAPIView,
    	UnCheckoutTableAPIView,
-   	SectionQueryAPIView
+   	SectionQueryAPIView,
+   	TableIdQueryAPIView
    	)
 
 
@@ -49,6 +51,8 @@ urlpatterns = [
 	url(r'^item/(?P<pk>\d+)/$', ItemDetailAPIView.as_view(), name='item-detail'),
 	url(r'^item/(?P<pk>\d+)/edit/$', ItemUpdateAPIView.as_view(), name='item-update'),
 	url(r'^item/(?P<pk>\d+)/delete/$', ItemDeleteAPIView.as_view(), name='item-delete'),
+	url(r'^item/category/(?P<category>\d+)/$', CategoryQueryAPIView.as_view(), name='categoryItem-query'),
+
 
 # 	section
    	url(r'^section/create$', SectionCreateAPIView.as_view(), name='section-create'),
@@ -69,5 +73,6 @@ urlpatterns = [
 	url(r'^table/unregistered$', UnRegisteredTableAPIView.as_view(), name='unregistered-table-query'),
 	url(r'^table/checkout$', CheckoutTableAPIView.as_view(), name='checkout-table-query'),
 	url(r'^table/uncheckout$', UnCheckoutTableAPIView.as_view(), name='uncheckout-table-query'),
-	url(r'^table/section/(?P<section>\d+)/$', SectionQueryAPIView.as_view(), name='sectiontable-query')
+	url(r'^table/section/(?P<section>\d+)/$', SectionQueryAPIView.as_view(), name='sectiontable-query'),
+	url(r'^table/(?P<slug>[-\w]+)/$', TableIdQueryAPIView.as_view(), name='tableId-query')
 ]

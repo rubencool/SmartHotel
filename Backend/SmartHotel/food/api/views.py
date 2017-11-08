@@ -71,6 +71,14 @@ class ItemDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
 
+class CategoryQueryAPIView(ListAPIView):
+    serializer_class = ItemSerializer
+    lookup_field = 'in_category'
+    def get_queryset(self):
+        category = self.kwargs["category"]
+
+        return Item.objects.filter(in_category= category)
+
 # Table
 class TableCreateAPIView(CreateAPIView):
 	queryset = Table.objects.all()
@@ -116,6 +124,14 @@ class SectionQueryAPIView(ListAPIView):
         section = self.kwargs["section"]
 
         return Table.objects.filter(section= section)
+
+class TableIdQueryAPIView(ListAPIView):
+    serializer_class = TableSerializer
+    lookup_field = 'table_id'
+    def get_queryset(self):
+        slug = self.kwargs["slug"]
+
+        return Table.objects.filter(table_id= slug)
 
 # section
 class SectionCreateAPIView(CreateAPIView):
