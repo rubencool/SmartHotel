@@ -24,14 +24,14 @@ const SidebarStore = {
       path: '/admin/table'
     },
     {
-      name: 'Icons',
+      name: 'Items',
       icon: 'ti-pencil-alt2',
-      path: '/admin/icons'
+      path: '/admin/item'
     },
     {
-      name: 'Maps',
+      name: 'Foods',
       icon: 'ti-map',
-      path: '/admin/maps'
+      path: '/admin/food'
     },
     {
       name: 'Notifications',

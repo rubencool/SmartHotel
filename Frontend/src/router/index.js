@@ -13,11 +13,16 @@ import UserProfile from '@/components/Dashboard/Views/UserProfile.vue'
 import EditProfileForm from '@/components/Dashboard/Views/UserProfile/EditProfileForm.vue'
 import Notifications from '@/components/Dashboard/Views/Notifications.vue'
 import Icons from '@/components/Dashboard/Views/Icons.vue'
+import Login from '@/components/Dashboard/Views/Login.vue'
 import Maps from '@/components/Dashboard/Views/Maps.vue'
 import Typography from '@/components/Dashboard/Views/Typography.vue'
 import TableForm from '@/components/Dashboard/Views/Table/TableForm.vue'
+import ItemForm from '@/components/Dashboard/Views/Item/ItemForm.vue'
+import FoodForm from '@/components/Dashboard/Views/Food/FoodForm.vue'
 import Form from '@/components/Dashboard/Views/Section/Form.vue'
 import TableEdit from '@/components/Dashboard/Views/Table/TableEdit.vue'
+import ItemEdit from '@/components/Dashboard/Views/Item/ItemEdit.vue'
+import FoodEdit from '@/components/Dashboard/Views/Food/FoodEdit.vue'
 import Edit from '@/components/Dashboard/Views/Section/Edit.vue'
 import TableList from '@/components/Dashboard/Views/TableList.vue'
 import DashboardLayout from '@/components/Dashboard/Layout/DashboardLayout.vue'
@@ -101,14 +106,38 @@ export default new Router({
           component: Notifications
         },
         {
-          path: 'icons',
-          name: 'icons',
-          component: Icons
+          path: 'item',
+          name: 'item',
+          component: Icons,
+          children: [
+            {
+              path: 'form',
+              name: 'itemform',
+              component: ItemForm
+            },
+            {
+              path: 'edit/:id',
+              name: 'itemedit',
+              component: ItemEdit
+            }
+          ]
         },
         {
-          path: 'maps',
-          name: 'maps',
-          component: Maps
+          path: 'food',
+          name: 'food',
+          component: Maps,
+          children: [
+            {
+              path: 'form',
+              name: 'Foodform',
+              component: FoodForm
+            },
+            {
+              path: 'edit/:id',
+              name: 'foodedit',
+              component: FoodEdit
+            }
+          ]
         },
         {
           path: 'table',
@@ -146,6 +175,13 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    }
+
+
     // { path: '*', component: NotFound }
   ]
 })

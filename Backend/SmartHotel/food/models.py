@@ -41,5 +41,5 @@ class Table(models.Model):
     checkout = models.BooleanField(default=False)
     cust_id = models.IntegerField(default = 0)
 
-    def __str__(self):
-        return self.table_id
+    def __int__(self):
+        return self.id

@@ -85,7 +85,7 @@
       },
       setNewCustomerList: function () {
         axios.post('http://127.0.0.1:8000/api/customer/create', {
-          table_id: this.table_id,
+          table: this.table_id,
         })
           .then(response => {
             console.log(response.data)
@@ -99,7 +99,7 @@
         for (var i = 0; i < this.tableList.length; i++) {
           if (this.tableId === this.tableList[i].table_id) {
             this.table_id = this.tableList[i].id;
-            cookie.set('customerTableId',this.tableId, 1);
+//            cookie.set('customerTableId',this.tableId, 1);
             cookie.set('customerRegistered','true', 1);
             this.$parent.reloadMenu = true;
             this.updateTableRegistered();

@@ -4,10 +4,10 @@ from food.models import Table, Item
 # Create your models here.
 class Customer(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True, blank=True)
-	table_id = models.ForeignKey(Table, blank=True, null=True)
+	table = models.IntegerField(default=0)
 
-	def __int__(self):
-	    return
+	def __str__(self):
+	    return  created_at
 
 # Order model
 class Order(models.Model):

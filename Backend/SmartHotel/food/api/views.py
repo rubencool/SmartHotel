@@ -51,7 +51,6 @@ class CategoryDeleteAPIView(RetrieveDestroyAPIView):
 class ItemCreateAPIView(CreateAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
-	permission_classes = [IsAdminUser]
 
 class ItemListAPIView(ListAPIView):
 	queryset = Item.objects.all()
@@ -65,7 +64,6 @@ class ItemDetailAPIView(RetrieveAPIView):
 class ItemUpdateAPIView(RetrieveUpdateAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
-	permission_classes = [IsAdminUser,IsOwnerOrReadOnly]
 
 class ItemDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Item.objects.all()

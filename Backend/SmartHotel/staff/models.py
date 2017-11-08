@@ -15,3 +15,16 @@ class Member(models.Model):
 
 	def __str__(self):
 		return self.first_name
+
+
+class Moderator(models.Model):
+	first_name = models.CharField(max_length = 25)
+	last_name = models.CharField(max_length = 25)
+	address = models.CharField(max_length = 25)
+	email = models.EmailField(null= True, blank= True)
+	is_super = models.BooleanField(default = False)
+	is_active = models.BooleanField(default = False)
+	is_waiter = models.BooleanField(default = False)
+
+	def __str__(self):
+		return self.first_name

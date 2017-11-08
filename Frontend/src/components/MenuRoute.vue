@@ -3,7 +3,7 @@
     <div class="android-more-section">
       <!--content-->
       <div class="android-content mdl-layout__content">
-        
+
           <div class="android-card-container mdl-grid" v-if="category && category.length">
 
             <!--order-->
@@ -55,7 +55,8 @@
         msg: 'MenuRoute',
 //        registered: false,
         tableId: cookie.get('customerTableId'),
-        customerList:[]
+        customerList:[],
+        numb:0
       }
     },
     mounted () {
@@ -80,7 +81,12 @@
           .then(response => {
             console.log(response.data)
             this.customerList = response.data
+            this.numb = response.data.length
+//            console.log(this.customerList['11'])
+            this.tableId = this.customerList[this.numb-1].table
             cookie.set('customerId',this.customerList.length, 1);
+            cookie.set('customerTableId',this.tableId, 1);
+
           }).catch(e => {
           this.errors.push(e)
           console.error(e)

@@ -1,5 +1,5 @@
 <template>
-    <div id="print" class="row">
+    <div class="row">
       <div class="col-lg-4 col-md-5">
         <!--Checkout Tables-->
         <div class="card">

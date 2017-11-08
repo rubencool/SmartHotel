@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e203a6f-9993-4ec5-99eb-b3807fcd8293" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Backend/SmartHotel/customer/migrations/0007_auto_20171108_1034.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Backend/SmartHotel/customer/migrations/0008_auto_20171108_1041.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Backend/SmartHotel/staff/migrations/0003_moderator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodEdit.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodForm.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemEdit.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemForm.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/db.sqlite3" afterPath="$PROJECT_DIR$/Backend/SmartHotel/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/customer/models.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/customer/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/SmartHotel/staff/models.py" afterPath="$PROJECT_DIR$/Backend/SmartHotel/staff/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Icons.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Icons.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Maps.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Maps.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" afterPath="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js" afterPath="$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend/src/router/index.js" afterPath="$PROJECT_DIR$/Frontend/src/router/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,113 +33,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserProfile.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue">
+      <file leaf-file-name="Maps.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Maps.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="12" />
-              <folding>
-                <element signature="e#2964#3033#0" expanded="false" />
-                <element signature="e#3414#3700#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <marker date="1510098621919" expanded="true" signature="3873:4021" ph="..." />
-                <marker date="1510098621919" expanded="true" signature="3890:4012" ph="{&quot;name&quot;: 'Home'...}" />
-                <marker date="1510098621919" expanded="true" signature="3926:4006" ph="{...}" />
-                <marker date="1510098621919" expanded="true" signature="3943:3998" ph="{&quot;msg&quot;: 'Welcome to Your Vue.js App'...}" />
-                <marker date="1510098621919" expanded="true" signature="4105:4340" ph="..." />
-                <marker date="1510098621919" expanded="true" signature="4129:4174" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditProfileForm.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/EditProfileForm.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaperTable.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/PaperTable.vue">
+      <file leaf-file-name="FoodEdit.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodEdit.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+            <state relative-caret-position="234">
+              <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/App.vue">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Customer.vue">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="95" column="3" lean-forward="false" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/router/index.js">
+      <file leaf-file-name="RegisterTable.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Header.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+            <state relative-caret-position="-112">
+              <caret line="99" column="57" lean-forward="false" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py">
+      <file leaf-file-name="MenuRoute.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1232">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="265">
+              <caret line="89" column="25" lean-forward="true" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Icons.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Icons.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -146,6 +143,8 @@
       <find>1</find>
       <find>title</find>
       <find>Addre</find>
+      <find>cookie</find>
+      <find>table_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,14 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Frontend/smart-hotel/src/App.vue" />
-        <option value="$PROJECT_DIR$/Frontend/smart-hotel/src/components/LoginComponent.vue" />
-        <option value="$PROJECT_DIR$/Frontend/smart-hotel/index.html" />
-        <option value="$PROJECT_DIR$/Frontend/static/js/qrscan/qrscan.js" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/admin/home.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/admin/login.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/Home.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/Header.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/customer.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/admin/admin.vue" />
         <option value="$PROJECT_DIR$/Frontend/index.html" />
@@ -178,34 +169,42 @@
         <option value="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/urls.py" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/admin.py" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/api/urls.py" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/MembersCard.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/UserCard.vue" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/api/serializers.py" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/api/views.py" />
-        <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/models.py" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/food/admin.py" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Section/Form.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Section/Edit.vue" />
-        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" />
-        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" />
-        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" />
         <option value="$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/SideBar.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/TableList.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Typography.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Table/TableForm.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Table/TableEdit.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/EditProfileForm.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/UIComponents/PaperTable.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/App.vue" />
         <option value="$PROJECT_DIR$/Frontend/src/components/Customer.vue" />
-        <option value="$PROJECT_DIR$/Frontend/src/router/index.js" />
         <option value="$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Login.vue" />
+        <option value="$PROJECT_DIR$/Backend/SmartHotel/staff/models.py" />
+        <option value="$PROJECT_DIR$/Frontend/src/router/index.js" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue" />
+        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py" />
+        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodEdit.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodForm.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Icons.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemForm.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemEdit.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Maps.vue" />
+        <option value="$PROJECT_DIR$/Backend/SmartHotel/food/models.py" />
+        <option value="$PROJECT_DIR$/Backend/SmartHotel/customer/models.py" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue" />
+        <option value="$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue" />
       </list>
     </option>
   </component>
@@ -263,6 +262,20 @@
               <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
               <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
               <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,122 +295,19 @@
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="Section" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="Table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="GeneralViews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UIComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UIComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="SidebarPlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SmartHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="faces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,128 +321,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food" />
+      <recent name="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item" />
       <recent name="$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Table" />
       <recent name="$PROJECT_DIR$/Backend/SmartHotel/customer" />
       <recent name="$PROJECT_DIR$/Frontend/src/assets" />
-      <recent name="$PROJECT_DIR$/Frontend/src" />
-      <recent name="$PROJECT_DIR$/Frontend/static" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/package-lock.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Contact.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Drink.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/Home.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -581,6 +375,7 @@
       <workItem from="1510044570629" duration="86000" />
       <workItem from="1510053940210" duration="38815000" />
       <workItem from="1510097342930" duration="869000" />
+      <workItem from="1510104138275" duration="13277000" />
     </task>
     <task id="LOCAL-00001" summary="eslit dissable / css changed /Qrcode working in laptop (Phase -I)">
       <created>1509179675148</created>
@@ -673,11 +468,25 @@
       <option name="project" value="LOCAL" />
       <updated>1510098695912</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="middleware fixed">
+      <created>1510099022994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1510099022994</updated>
+    </task>
+    <task id="LOCAL-00015" summary="table api updated">
+      <created>1510116139626</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1510116139627</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181880000" />
+    <option name="totallyTimeSpent" value="196322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -693,33 +502,45 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21593447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4973939" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5115413" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5085629" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.48845866" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49143708" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.377916" sideWeight="0.49069247" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4973939" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5085629" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49143708" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.49143708" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.377916" sideWeight="0.49069247" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21593447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -763,7 +584,9 @@
     <MESSAGE value="Camera running issue fixed/cookie implemented for registration" />
     <MESSAGE value="manual register if camera not working" />
     <MESSAGE value="admin dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin dashboard" />
+    <MESSAGE value="middleware fixed" />
+    <MESSAGE value="table api updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="table api updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,90 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/static/img/faces/face-3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/api/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="76" lean-forward="false" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="83" column="45" lean-forward="true" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/MembersCard.vue" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile/UserCard.vue" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Layout/Content.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Layout/DashboardLayout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -882,61 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Overview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="53" column="32" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="54" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="71" column="52" lean-forward="false" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="105" column="38" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -988,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/SideBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Section/Form.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
@@ -1003,30 +683,6 @@
           <folding>
             <element signature="e#1762#2048#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Typography.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Table/TableForm.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,47 +694,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/TableList.vue">
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="90" lean-forward="false" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="90" />
-          <folding>
-            <element signature="e#1900#1925#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Customer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="95" column="3" lean-forward="false" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/PaperTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-1200">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1086,6 +712,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Customer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="95" column="3" lean-forward="false" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/PaperTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1102,40 +752,235 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-630">
           <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <marker date="1510098621919" expanded="true" signature="3873:4021" ph="..." />
-            <marker date="1510098621919" expanded="true" signature="3890:4012" ph="{&quot;name&quot;: 'Home'...}" />
-            <marker date="1510098621919" expanded="true" signature="3926:4006" ph="{...}" />
-            <marker date="1510098621919" expanded="true" signature="3943:3998" ph="{&quot;msg&quot;: 'Welcome to Your Vue.js App'...}" />
-            <marker date="1510098621919" expanded="true" signature="4105:4340" ph="..." />
-            <marker date="1510098621919" expanded="true" signature="4129:4174" ph="{...}" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Typography.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Layout/DashboardLayout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Table/TableForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/SideBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/TableList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/UserProfile.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="12" />
+        <state relative-caret-position="-684">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding>
-            <element signature="e#2964#3033#0" expanded="false" />
-            <element signature="e#3414#3700#0" expanded="false" />
+            <element signature="e#2953#3022#0" expanded="false" />
+            <element signature="e#3403#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/settings.py">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/UIComponents/SidebarPlugin/MovingArrow.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1232">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/SmartHotel/middleware.py">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Overview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
+          <folding>
+            <element signature="e#419#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Item/ItemEdit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="56" lean-forward="false" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Icons.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Maps.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/Dashboard/Views/Food/FoodEdit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/food/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/customer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/SmartHotel/staff/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/RegisterTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="99" column="57" lean-forward="false" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/components/MenuRoute.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="89" column="25" lean-forward="true" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
           <folding />
         </state>
       </provider>
