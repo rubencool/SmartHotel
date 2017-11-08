@@ -34,7 +34,7 @@ from .views import (
    	CheckoutTableAPIView,
    	UnCheckoutTableAPIView,
    	SectionQueryAPIView,
-   	TableIdQueryAPIView
+   	TableIdQueryAPIView,
    	)
 
 

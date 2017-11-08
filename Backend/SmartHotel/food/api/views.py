@@ -16,6 +16,8 @@ from rest_framework.permissions import (
 from food.models import Category, Item, Table, Section
 
 from .permissions import IsOwnerOrReadOnly
+from rest_framework.parsers import MultiPartParser, FormParser
+
 
 from .serializers import (
 	CategorySerializer,
@@ -27,7 +29,7 @@ from .serializers import (
 class CategoryCreateAPIView(CreateAPIView):
 	queryset = Category.objects.all()
 	serializer_class = CategoryCreateSerializer
-	permission_classes = [IsAdminUser]
+	parser_classes = (FormParser, MultiPartParser)
 
 class CategoryListAPIView(ListAPIView):
 	queryset = Category.objects.all()
@@ -41,7 +43,8 @@ class CategoryDetailAPIView(RetrieveAPIView):
 class CategoryUpdateAPIView(RetrieveUpdateAPIView):
 	queryset = Category.objects.all()
 	serializer_class = CategorySerializer
-	permission_classes = [IsAdminUser,IsOwnerOrReadOnly]
+	parser_classes = (FormParser, MultiPartParser)
+
 
 class CategoryDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Category.objects.all()
@@ -51,6 +54,7 @@ class CategoryDeleteAPIView(RetrieveDestroyAPIView):
 class ItemCreateAPIView(CreateAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
+	parser_classes = (FormParser, MultiPartParser)
 
 class ItemListAPIView(ListAPIView):
 	queryset = Item.objects.all()
@@ -64,6 +68,8 @@ class ItemDetailAPIView(RetrieveAPIView):
 class ItemUpdateAPIView(RetrieveUpdateAPIView):
 	queryset = Item.objects.all()
 	serializer_class = ItemSerializer
+	parser_classes = (FormParser, MultiPartParser)
+
 
 class ItemDeleteAPIView(RetrieveDestroyAPIView):
 	queryset = Item.objects.all()

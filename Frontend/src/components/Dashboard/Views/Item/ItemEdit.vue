@@ -16,11 +16,20 @@
             <div class="row">
               <div class="col-md-12">
                 <fg-input type="text"
-                          label="Table Name"
-                          placeholder="Section Name"
+                          label="Category Name"
+                          placeholder="Category Name"
                           v-model="sectionName"
                           id="sectionName">
                 </fg-input>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input type="file"
+                       id="fileItem"
+                       label="Image Url"
+                       placeholder="File"/>
               </div>
             </div>
 
@@ -80,13 +89,15 @@
         })
       },
       submit (id) {
+        var files = document.getElementById('fileItem').files;
         if (this.sectionName === ""){
           this.error = "Fill the field"
         }else {
-          axios.put('http://localhost:8000/api/food/table/'+id +'/edit/', {
-            table_id: this.sectionName,
-            section: this.sectionList.section
-          })
+          var formData = new FormData()
+          formData.append('cat_name', this.sectionName);
+          formData.append('img', files[0], files[0].name);
+          axios.put('http://localhost:8000/api/food/category/'+id +'/edit/', formData
+            , {headers: {'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'}})
             .then(response => {
               console.log(response.data)
             }).catch(e => {

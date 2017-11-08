@@ -16,6 +16,7 @@ class Order(models.Model):
     item = models.CharField(max_length = 30)
     quantity =models.FloatField()
     rate =models.FloatField()
+    date = models.DateTimeField(auto_now_add=True, blank=True)
     total =models.FloatField()
 
     def __str__(self):

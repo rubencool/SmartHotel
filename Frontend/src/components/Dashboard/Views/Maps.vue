@@ -21,7 +21,7 @@
               <div class="row" v-for="section in sectionList">
                 <div class="col-xs-3">
                   <div class="avatar">
-                    <img :src="'static/img/section/section.png'" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                    <img :src="section.img" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                   </div>
                 </div>
                 <div class="col-xs-6">

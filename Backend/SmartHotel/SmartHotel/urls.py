@@ -16,7 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns
-from food import views 
+from food import views
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,3 +28,6 @@ urlpatterns = [
     url(r'^api/staff/',include("staff.api.urls", namespace = 'staff-api')),
     url(r'^api/customer/',include("customer.api.urls", namespace = 'customer-api')),
 ]
+
+if settings.DEBUG:
+    urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

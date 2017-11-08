@@ -18,16 +18,24 @@
               <div class="col-md-12">
                 <fg-input type="text"
                           label="Category Name"
-                          placeholder="Section Name"
+                          placeholder="Category Name"
                           v-model="sectionName"
                           id="sectionName">
                 </fg-input>
               </div>
-              <a :href="'https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl='+sectionName" target="_blank">Qrcode<i id="icon" class="material-icons">select_all</i></a>
-
             </div>
 
-            <div class="text-center">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="file"
+                       id="fileItem"
+                       label="Image Url"
+                       placeholder="File"/>
+              </div>
+            </div>
+
+
+              <div class="text-center">
               <button type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="submit">
                 Create
               </button>
@@ -78,20 +86,22 @@
         })
       },
       submit () {
+        var files = document.getElementById('fileItem').files;
         if (this.sectionName === ""){
           this.error = "Fill the field"
         }else {
-          axios.post('http://localhost:8000/api/food/table/create', {
-            section_name: this.sectionName
-          })
+          var formData = new FormData()
+          formData.append('cat_name', this.sectionName);
+          formData.append('img', files[0], files[0].name);
+          axios.post('http://localhost:8000/api/food/category/create', formData
+            , {headers: {'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'}})
             .then(response => {
               console.log(response.data)
             }).catch(e => {
-            this.errors.push(e)
             console.error(e)
           })
-          this.sectionName= ''
           this.$router.go(-1)
+
         }
       },
       ready: function() {

@@ -7,7 +7,7 @@ from staff.models import Member
 class Category(models.Model):
 	cat_name = models.CharField(max_length = 25)
 	created_by = models.ForeignKey(User, null=True, blank=True)
-	icon = models.CharField(max_length = 25)
+	img = models.FileField(upload_to='uploads/')
 
 	def __str__(self):
 		return self.cat_name
@@ -17,7 +17,8 @@ class Item(models.Model):
 	itm_name = models.CharField(max_length=100)
 	rate = models.FloatField()
 	details =models.CharField(max_length= 100)
-	image_url =models.FilePathField(blank= True, null=True)
+	#image_url =models.FilePathField(blank= True, null=True)
+	img = models.FileField(upload_to='uploads/')
 	in_category =models.ForeignKey(Category)
 
 	def __str__(self):
